@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Responsivo Colorido</title>
+    <style>
+        /* Estilos base */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #0d1a70; /* Naranja vibrante */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Contenedor principal con Flexbox */
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap; /* Permite que los elementos bajen de línea */
+        }
+
+        /* Secciones con colores diversos */
+        .barramenu {
+            background-color: #7dc3e4; /* Verde lima */
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        .principal {
+            background-color: #4b60bd; /* Azul intenso */
+            color: white;
+            flex: 3;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .infoextra {
+            background-color: #5c84bf; /* Magenta */
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #eeebeb;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Apila los divs verticalmente */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Sitio Web Responsivo</h1>
+    </header>
+
+    <div class="container">
+        <div class="barramenu">
+            <h3>Menú</h3>
+<p>Aquí puedes navegar por las secciones de mi sitio, ver mis proyectos y conocer más sobre mi trabajo creativo.</p>
+</div>
+
+<div class="principal">
+    <h2>Contenido Principal</h2>
+
+    <img src="https://tse2.mm.bing.net/th/id/OIP.ZLXSWf-U-aafygmVnB8gYAHaFW?w=600&h=434&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Diseño gráfico">
+
+    <p>Somos dos diseñadores gráficos apasionados por crear contenido visual original. Nos gusta trabajar en equipo, combinando ideas para lograr diseños creativos y modernos.</p>
+</div>
+
+<div class="infoextra">
+    <h3>Info Extra</h3>
+    <p>Especialidades: branding, diseño para redes sociales, identidad visual y contenido creativo.</p>
+    <p>Siempre buscamos innovar y transmitir ideas de forma visual clara y llamativa.</p>
+</div>
+    </div>
+
+    <footer>
+        <p>Pie de página &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
